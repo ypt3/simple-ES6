@@ -95,6 +95,7 @@ points.map(([ x, y ]) => {
   return { x, y };
 });
 
+/*
 function Car(options) {
   this.title = options.title;
 }
@@ -120,6 +121,7 @@ const toyota = new Toyota({color: 'red', title: 'Daily Driver'});
 toyota;
 toyota.drive();
 toyota.honk();
+*/
 
 class Car {
   constructor({title}) {
@@ -131,7 +133,42 @@ class Car {
   }
 }
 
-const car = new Car({title: 'Toyota'});
-car;
-car.drive();
+//const car = new Car({title: 'Toyota'});
+//car;
+//car.drive();
+
+/*
+class Toyota extends Car {
+  constructor(options) {
+    super(options);
+    this.color = options.color;
+  }
+  
+  honk() {
+    return 'beep';
+  }
+}
+
+const toyota = new Toyota({color: 'red', title: 'Daily Driver'});
+'---'
+toyota.honk();
+toyota.drive()
+toyota;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
