@@ -156,9 +156,21 @@ toyota.drive()
 toyota;
 */
 
+const nums = [1,2,3,4];
+/*
+let total = 0;
+for(let num of nums) {
+  total += num;
+}
+*/
 
+function* numbers() {
+  yield;
+}
 
-
+const gen = numbers();
+gen.next();
+gen.next();
 
 
 
