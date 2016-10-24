@@ -320,7 +320,12 @@ fetch(url)
   .then(response => response.json())
   .then(data => console.log(data));
 
+url = "https://jsonplaceholder.typicode123.com/posts123456";
 
+//It doesn't work like reject(), it will catch when it cannot find network like status 404
+fetch(url)
+  .then(response => console.log(response))
+  .catch(error => console.log('BAD', error))
 
 
 
